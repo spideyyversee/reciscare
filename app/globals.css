@@ -1,17 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  var(--color-recl-bg-start): #e8f5e9;
-  var(--color-recl-bg-end): #66bb6a;
-  var(--color-recl-dark): #1b3325;
-  var(--color-recl-card): #4a7c59;
-  var(--font-sans): ui-sans-serif, system-ui, sans-serif;
+  /* HAPUS tulisan 'var()' di sini. Langsung pakai --nama */
+  --color-recl-bg-start: #e8f5e9;
+  --color-recl-bg-end: #66bb6a;
+  --color-recl-dark: #1b3325;
+  --color-recl-card: #4a7c59;
+  --font-sans:
+    ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 body {
   margin: 0;
   padding: 0;
-  /* Background global untuk semua layar */
+  /* Di sini baru pakai var() untuk MENGGUNAKAN warnanya */
   background: linear-gradient(
     to bottom,
     var(--color-recl-bg-start),
